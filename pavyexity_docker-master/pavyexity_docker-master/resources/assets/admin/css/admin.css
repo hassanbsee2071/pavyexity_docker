@@ -1,0 +1,92 @@
+.guided-tour {
+    margin-top: 20px;
+    cursor: pointer;
+}
+body {
+    background-color: #f8f8f8 !important;
+}
+
+.mb-3 {
+    margin-bottom: 30px;
+}
+
+  /*Added by MD Abu Ahsan Basir*/
+
+  .menu_section {
+      margin-bottom: 0px;
+  }
+  .nav.side-menu>li>a, .nav.child_menu>li>a {
+      margin-bottom: 0px;
+      padding: 1rem;
+  }
+
+  .nav_menu {
+    float: unset;
+    background-color: #fff!important;
+    border: 0px;
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58, 59, 69, .15)!important;
+    margin-bottom: 1.5rem!important;
+  }
+
+  .nav_menu::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  .sidebar-divider {
+    border-top: 1px solid rgba(255, 255, 255, .15);
+    margin: 0 1rem 1rem;
+  }
+
+  .shadow {
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58, 59, 69, .15)!important;
+  }
+  .card {
+    min-width: 0;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #e3e6f0;
+    border-radius: .35rem;
+  }
+
+  .card-body {
+      flex: 1 1 auto;
+      min-height: 1px;
+      padding: 1.25rem;
+  }
+  .border-left-default {
+    border-left: .25rem solid #ADB2B5!important;
+  }
+  .border-left-primary {
+    border-left: .25rem solid #4e73df!important;
+  }
+
+  .text-default {
+    color: #73879C;
+  }
+  .text-primary {
+      color: #4e73df!important;
+  }
+  .widget {
+    margin-bottom: 30px;
+  }
+  .widget .card {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  /* Company invoice */
+  #comapny_invoice .sorting,
+  #comapny_invoice .sorting_asc,
+  #comapny_invoice .sorting_desc,
+  #logs .sorting,
+  #logs .sorting_asc,
+  #logs .sorting_desc {
+      background: none;
+  }
+  .comapny_invoice_search {
+      display: block;
+      margin-right: 10px;
+      width: 85%;
+  }

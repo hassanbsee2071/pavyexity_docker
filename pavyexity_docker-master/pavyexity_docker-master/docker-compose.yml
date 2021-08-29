@@ -1,0 +1,34 @@
+version: "3.7"
+services:
+  app:
+    build:
+      args:
+        user: root
+        uid: 0
+      context: ./
+      dockerfile: Dockerfile
+    working_dir: /var/www/
+    environment:
+      - COMPOSER_MEMORY_LIMIT=-1
+    volumes:
+      - ./:/var/www
+    networks:
+      - laravel
+
+  nginx:
+    image: nginx:alpine
+    ports:
+      - 8005:80
+    depends_on:
+      - app
+    volumes:
+      - ./:/var/www
+      - ./docker-compose/nginx:/etc/nginx/conf.d/
+    networks:
+      - laravel
+
+networks:
+  laravel:
+    driver: bridge
+
+
